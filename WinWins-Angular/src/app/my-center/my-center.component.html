@@ -1,0 +1,41 @@
+<body>
+<div class="container">
+  <div id="renkGecisi">
+
+    <form #saveUser="ngForm" (ngSubmit)="onClickSubmit(saveUser.value)">
+
+      <b>Kazanmak İçin Haydi Kayıt Ol</b>
+
+      <div class="field" tabindex="1">
+        <label for="name">
+          <i class="far fa-user"></i>Ad
+        </label>
+        <input name="name" type="text" placeholder="john" required="required" [(ngModel)]="name">
+      </div>
+      <div class="field" tabindex="1">
+        <label for="surname">
+          <i class="far fa-user"></i>Soyad
+        </label>
+        <input name="surname" type="text" placeholder="doe" required="required" [(ngModel)]="surname">
+      </div>
+      <div class="field" tabindex="2">
+        <label for="email">
+          <i class="far fa-envelope"></i>Email
+        </label>
+        <input name="email" type="text" placeholder="email@domain.com" required="required" [(ngModel)]="email">
+      </div>
+      <div class="field" tabindex="2">
+        <label for="sifre">
+          <i class="far fa-envelope"></i>Şifre
+        </label>
+        <input name="password" type="password" placeholder="*********" required="required" [(ngModel)]="password">
+      </div>
+
+
+      <button type="submit" [disabled]="!name || !surname || !email || !password">Kaydol</button>
+
+    </form>
+  </div>
+
+</div>
+</body>

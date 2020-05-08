@@ -1,0 +1,30 @@
+<body>
+<div class="container">
+  <div id="renkGecisi">
+
+    <form #loginForm='ngForm' (ngSubmit)="try(loginForm.value)">
+      <b>Kazanmak İçin Haydi Giriş Yap</b>
+
+        <div class="field" tabindex="2">
+          <label for="email">
+            <i class="far fa-envelope"></i>Email
+          </label>
+          <input name="email" type="text" placeholder="email@domain.com" required ngModel>
+        </div>
+
+        <div class="field" tabindex="2">
+          <label for="sifre">
+            <i class="far fa-envelope"></i>Şifre
+          </label>
+          <input name="password" type="password" placeholder="*********" required ngModel>
+        </div>
+        <button type="submit" >Giriş</button>
+      </form>
+      <b>Şimdi Kayıt Olabilirsin</b>
+      <hr>
+      <button type="submit" (click)="git()">Kayıt Ol</button>
+
+  </div>
+
+</div>
+</body>

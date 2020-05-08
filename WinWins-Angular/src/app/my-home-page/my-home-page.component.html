@@ -1,0 +1,24 @@
+
+  <div class="container">
+<!--    <ul *ngFor="let p of uyeList">-->
+<!--      <li class="list-group-item">{{p.id}}</li>-->
+<!--      <li class="list-group-item">{{p.name}}</li>-->
+<!--      <li class="list-group-item">{{p.surname}}</li>-->
+<!--    </ul>-->
+    uyeList
+    <div class="card"  *ngFor="let p of uyeList">
+      <img src="" class="card-img-top" alt="resim">
+      <div class="card-body">
+        <h5 class="card-title">Takas Başlık</h5>
+        <p >Yayınlayan Kişi : {{p.username}}</p>
+        <p >Yayınlayan Kişi : {{p.surname}}</p>
+        <p >Yayınlayan Kişi : {{p.email}}</p>
+        <p class="card-text">Takas açıklaması için ayrılan bölüm</p>
+        <a  class="btn btn-primary">İncele</a>
+        <a  class="btn btn-success">Teklif Et</a>
+      </div>
+    </div>
+
+
+  </div>
+
